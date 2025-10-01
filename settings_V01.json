@@ -1,0 +1,220 @@
+{
+  // === Font Settings ===
+  "editor.fontFamily": "'Dank Mono', 'Fira Code iScript'",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        // 1️⃣ All text italic
+        "scope": [
+          // following will be in italic (=FlottFlott)
+          // Only these scopes will be italic
+
+          // "comment",
+          // "entity.name.type.class", //class names
+          // "keyword", //import, export, return…
+          // "storage.modifier", //static keyword
+          // "storage.type", //class keyword
+          // "support.class.builtin", //Array, String, etc.
+          // "keyword.control", //if, for , while
+          // "constant.language", //true, false, null
+          // "entity.other.attribute-name",
+          // "entity.name.method" //function names
+
+          "" // ALLLLLLLLLLL
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        // 2️⃣ Comments
+        "scope": ["comment"],
+        "settings": {
+          // "foreground": "#735091",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        // 3️⃣ Scopes excluded from italics
+        "scope": [
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+
+  // === Editor Behavior ===
+  // "editor.fontWeight": "normal"
+  // "editor.fontWeight": "bold",
+  "editor.fontSize": 16,
+  "editor.minimap.enabled": false, // minimap of the code
+  "editor.guides.indentation": false, // indentation lines on the coding editor
+  "editor.renderWhitespace": "none",
+  "editor.matchBrackets": "always", // highlighting the brackets where the cursor IN
+  "editor.lightbulb.enabled": "off",
+  "editor.hover.enabled": true,
+  "editor.showFoldingControls": "mouseover",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontalScrollbarSize": 10,
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.hideCursorInOverviewRuler": false,
+  "editor.overviewRulerBorder": false,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.fontLigatures": true, // == === != & % <= >= <> -> =>
+
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.find.cursorMoveOnType": false,
+  "editor.accessibilitySupport": "off",
+
+  // === Suggestions ===
+  "editor.tabCompletion": "on",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestOnTriggerCharacters": true,
+
+  // === WorkBench Appearance ===
+  "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.hidesExplorerArrows": true, // hides the explorer arrows
+  "workbench.tree.indent": 12,
+  "workbench.tree.renderIndentGuides": "none", // hides the indentation lines in explorer
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": false,
+  "workbench.editor.showTabs": "single",
+  "workbench.layoutControl.enabled": false, // Welcome file option
+  "workbench.tips.enabled": false, // simple shortcut keyboard commands tips shown on startup
+  "workbench.editor.enablePreview": false,
+  "workbench.activityBar.location": "top",
+
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#44007799", // A visible blue/purple shade with ~60% opacity
+    "editor.selectionHighlightBackground": "#3b005b40", // Lighter version for word highlights
+    "editor.selectionForeground": "#FFFFFF", // Optional: ensures text stays readable
+
+    // explorer sidebar & folders settings
+    "editorSuggestWidget.selectedBackground": "#231739",
+    "sideBar.background": "#140E1A",
+    "list.activeSelectionBackground": "#231739",
+    // "list.activeSelectionForeground": "#fff",
+    "list.inactiveSelectionBackground": "#231739",
+    "list.focusBackground": "#231739",
+    "list.hoverBackground": "#231739",
+
+    "terminalCursor.foreground": "#C45DFF",
+
+    // git colors
+    // Untracked files (make them more visible)
+    "gitDecoration.untrackedResourceForeground": "#985b00", // bright green
+    // Modified files
+    "gitDecoration.modifiedResourceForeground": "#018600", // orange
+    // Added files
+    "gitDecoration.addedResourceForeground": "#008243", // neon green
+    // Deleted files
+    "gitDecoration.deletedResourceForeground": "#900a00", // red
+    // Ignored files
+    "gitDecoration.ignoredResourceForeground": "#757575" // gray
+  },
+
+  // === Window ===
+  "window.zoomLevel": 1,
+  // "window.commandCenter": false,
+  "window.menuBarVisibility": "toggle",
+
+  // === Terminal & Git ===
+  // "terminal.integrated.enableMultiLinePasteWarning": "always",
+  "terminal.integrated.fontFamily": "Dank Mono",
+  "terminal.integrated.env.windows": {},
+  "git.openRepositoryInParentFolders": "never",
+  "git.autofetch": true,
+
+  // === Emmet for JSX ===
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // === React Snippet Settings ===
+  "reactSnippets.settings.importReactOnTop": false,
+
+  // === Auto Save ===
+  "files.autoSave": "afterDelay",
+
+  // === Cursor Settings ===
+  "cursor.fontFamily": "'Fira Code iScript', 'Dank Mono', monospace",
+  "cursor.fontLigatures": true,
+  "cursor.fontSize": 14,
+  "cursor.fontWeight": "normal",
+
+  // === Explorer Setting ===
+  "breadcrumbs.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "git.decorations.enabled": true,
+
+  // === Code-Runner ===
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "csharp": "cd $dir && dotnet run",
+    "html": "start $fileName",
+    "xml": "start $fileName"
+  },
+
+  // === Auto Close Tag ===
+  "auto-close-tag.activationOnLanguage": ["html", "xml"],
+
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "dotnet.server.useOmnisharp": true,
+  "editor.codeLens": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.wordWrap": "on",
+  "redhat.telemetry.enabled": true,
+
+  "animations.Install-Method": "Apc Customize UI++",
+  "apc.imports": [
+    "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],
+  "animations.Enabled": true,
+  "workbench.startupEditor": "none",
+
+  // === custom VsCode styles ===
+  "vscode_custom_css.imports": [
+    "file:///home/mrx/Downloads/Curosr_Font_Settings/custom_vscode_styles.css"
+  ],
+  "github.copilot.enable": {
+    "*": false
+  },
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.xlsx": "default"
+  },
+
+  "markdown.preview.fontFamily": "Dank Mono",
+  "notebook.markdown.fontFamily": "Dank Mono",
+  "notebook.output.fontFamily": "Dank Mono",
+  "workbench.secondarySideBar.defaultVisibility": "visible"
+
+  // "scm.diffDecorations": "all", // show green/red lines in the gutter + overview
+  // "diffEditor.renderIndicators": true, // keep +/- indicators in diffs
+  // "notebook.diff.ignoreOutputs": true // for notebooks, show only code cell changes
+}
