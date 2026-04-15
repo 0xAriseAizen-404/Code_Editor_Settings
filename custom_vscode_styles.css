@@ -1,3 +1,19 @@
-.mtk8.mtki {
-  color: red;
+/* Notebook output cells */
+.monaco-workbench .notebook-rendered-output,
+.monaco-workbench .notebook-rendered-output * {
+  font-family: 'Dank Mono', 'Fira Code iScript', monospace !important;
+  font-size: 14px;
 }
+
+/* Markdown rendered inside notebooks */
+.monaco-workbench .notebook-markdown-preview,
+.monaco-workbench .notebook-markdown-preview * {
+  font-family: 'Dank Mono', 'Fira Code iScript', monospace !important;
+}
+
+/* Plain text outputs (print, stdout) */
+.monaco-workbench .output-plaintext,
+.monaco-workbench .output-plaintext * {
+  font-family: 'Dank Mono', 'Fira Code iScript', monospace !important;
+}
+
